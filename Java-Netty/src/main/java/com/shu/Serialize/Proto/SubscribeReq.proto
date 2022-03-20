@@ -1,0 +1,12 @@
+package Proto;
+option java_package="com.shu.Serialize.Proto";
+option java_outer_classname="SubscribeReqMessage";
+
+message SubscribeReq{
+  required int32 subRespId=1;
+  required string userName=2;
+  required string productName=3;
+  required string phoneNumber=4;
+  required string address=5;
+}
+// 生成命令：protoc -I=E:\Project\Netty\Java-Netty\src\main\java\com\shu\Serialize\Proto --java_out=E:\Project  E:\Project\Netty\Java-Netty\src\main\java\com\shu\Serialize\Proto\SubscribeReq.proto

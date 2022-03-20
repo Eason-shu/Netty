@@ -1,0 +1,9 @@
+package Proto;
+option java_package="com.shu.Serialize.Proto";
+option java_outer_classname="SubscribeRespMessage";
+
+message SubscribeResp{
+  required int32 subRespId=1;
+  required int32 respCode=2;
+  required string desc=3;
+}
